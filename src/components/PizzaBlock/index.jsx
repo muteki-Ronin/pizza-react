@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-function PizzaBlock({ title, prise, image, sizes, types }) {
+function PizzaBlock({ title, price, image, sizes, types }) {
     const [activeType, setActiveType] = useState(0);
     const [activeSize, setActiveSize] = useState(0);
 
@@ -35,7 +35,7 @@ function PizzaBlock({ title, prise, image, sizes, types }) {
                 </ul>
             </div>
             <div className="pizza-block__bottom">
-                <div className="pizza-block__price">от {prise} грн.</div>
+                <div className="pizza-block__price">от {price} грн.</div>
                 <button className="button button--outline button--add">
                     <svg
                         width="12"
